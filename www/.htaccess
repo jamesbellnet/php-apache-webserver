@@ -1,0 +1,7 @@
+Options +FollowSymLinks -MultiViews
+
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{REQUEST_URI} !(.*)app 
+RewriteRule ^(.*)$ app/$1 [L]
