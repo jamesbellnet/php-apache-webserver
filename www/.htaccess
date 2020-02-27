@@ -5,5 +5,5 @@ RewriteBase /
 
 # Redirect requests from the document root (here)
 # to app/ directory and hide the subfolder in the URI
-RewriteCond %{REQUEST_URI} !(.*)app 
-RewriteRule ^(.*)$ app/$1 [L]
+RewriteCond %{REQUEST_URI} !(.*)public_html 
+RewriteRule ^(.*)$ public_html/$1 [L]
